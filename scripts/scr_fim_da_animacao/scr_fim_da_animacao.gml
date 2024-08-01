@@ -1,4 +1,4 @@
-function fim_da_animacao(){
+function scr_fim_da_animacao(){
 	var _sprite = sprite_index;
 	var _image = image_index;
 	if (argument_count > 0) _sprite = argument[0];

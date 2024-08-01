@@ -69,8 +69,8 @@ function scr_player_atacando(){
 		sprite_index = spr_player_atack_e;
 	}
 	
-	/// função de fim da animacao 
-	if function ScrFimDaAnimacao(){
+/// função de fim da animacao 
+if function ScrFimDaAnimacao(){
 
 var _sprite=sprite_index;
 var _image=image_index;

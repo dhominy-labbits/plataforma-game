@@ -15,5 +15,6 @@ veloc = 3;
 vida = 5;
 alfa_hit = 0;
 alarm[0] = 0;
+inv_tempo = 180;
 
 estado = scr_player_movendo;

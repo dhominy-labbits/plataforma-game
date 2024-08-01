@@ -1,5 +1,7 @@
 /// @description Insert description here
+event_inherited();
 
+if vida > 0{
 // colidir com a parede inimigo, muda a direção
 if place_meeting(x,y, obj_parede_inimigo){
 	if direc == 0{
@@ -21,4 +23,5 @@ else if direc ==1{
 
 if vida <=0{
 	instance_destroy();
+}
 }

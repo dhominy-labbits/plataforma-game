@@ -1,5 +1,6 @@
 /// @description Status
-direc = 0;
-veloc = 1;
+event_inherited();
 
-vida = 3;
+veloc = 0.4;
+
+sprite_morrendo = spr_cebola_morrendo;
