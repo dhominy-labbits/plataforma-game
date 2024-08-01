@@ -15,3 +15,13 @@ if (alarm[0] > 0) {
     image_alpha = 1;
 }
 
+#region Diálogo
+if distance_to_object(obj_par_npc) <= 10 {
+	if keyboard_check_pressed(ord("F")) and global.dialogo == false {
+		show_debug_message("Apertou F");
+		var _npc = instance_nearest(x, y, obj_par_npc);
+		var _dialogo = instance_create_layer(x, y, "Dialogo",obj_dialogo);
+		_dialogo.npc_nome = _npc.nome;
+	}
+}
+#endregion
