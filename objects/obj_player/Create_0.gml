@@ -1,5 +1,6 @@
 /// Create Event
 /// @description Inicializa variáveis e struct de inputs
+global.itens_coletados = 0;
 
 direita = 0;
 esquerda = 0;

@@ -1,18 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"camera",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_item",
+  "eventList":[],
   "managed":true,
-  "name":"camera",
+  "name":"obj_item",
   "overriddenProperties":[],
   "parent":{
-    "name":"PLAYER",
-    "path":"folders/Objects/PLAYER.yy",
+    "name":"Itens",
+    "path":"folders/Objects/Itens.yy",
   },
   "parentObjectId":null,
-  "persistent":true,
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -29,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_potion",
+    "path":"sprites/spr_potion/spr_potion.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
