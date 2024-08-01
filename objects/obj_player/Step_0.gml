@@ -1,54 +1,16 @@
-/// Step event
+/// Step Event
 /// @description Detecta os inputs
 
-// Controlando o player
-var _chao = place_meeting(x, y + 1, obj_chao);
+script_execute(estado);
 
-var _left, _right, _jump;
-_left   = keyboard_check(inputs.left);
-_right  = keyboard_check(inputs.right);
-_jump   = keyboard_check_pressed(inputs.jump);
-
-velh    = (_right - _left) * vel; // Define a velocidade horizontal em 1, 0 ou -1, multiplicada pela velocidade
-
-// Pulando
-if(_chao)
-{
-    if (_jump)
-    {
-        velv = -vel_jump;
+// Combate
+if (alarm[0] > 0) {
+    if (image_alpha >= 1) {
+        alfa_hit = -0.08;
+    } else if (image_alpha <= 0) {
+        alfa_hit = 0.05;
     }
-    
-    // Se eu estou no chão e me movendo
-    if (velh != 0)
-    {
-        // Mudo a sprite
-        sprite_index = spr_player_run;
-        // Faço ele olhar para onde eu estou indo
-        image_xscale = 1.5 * sign(velh);
-    }
-    else
-    {
-        sprite_index = spr_player_idle;
-    }
-}
-else // Não estou no chão
-{
-    //Mudando a sprite
-    if (velv < 0)
-    {
-        sprite_index = spr_player_jump;
-    }
-    else
-    {
-        sprite_index = spr_player_fall;
-        
-    }
-    
-    // Aplicando a gravidade
-    velv    += grav;
-    if (velh != 0)
-    {
-        image_xscale = 1.5 * sign(velh);
-    }
+    image_alpha += alfa_hit;
+} else {
+    image_alpha = 1;
 }

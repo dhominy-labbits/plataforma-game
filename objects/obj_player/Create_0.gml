@@ -1,17 +1,19 @@
+/// Create Event
 /// @description Inicializa variáveis e struct de inputs
 
-
-velh		= 0;
-velv		= 0;
-vel			= 4;
-grav		= .3;
-vel_jump	= 7;
-
-inputs	= {
-	left	: ord("A"),
-	right	: ord("D"),
-	jump	: ord("W")
-}
+direita = 0;
+esquerda = 0;
+cima = 0;
+gravidade = 0.1;
+direc = 0;
+hveloc = 0;
+vveloc = 0;
+veloc = 3;
 
 
-image_xscale = 1.5;
+// Combate
+vida = 5;
+alfa_hit = 0;
+alarm[0] = 0;
+
+estado = scr_player_movendo;
