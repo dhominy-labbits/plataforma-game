@@ -43,7 +43,6 @@
     {"id":{"name":"obj_ini_cebola","path":"objects/obj_ini_cebola/obj_ini_cebola.yy",},},
     {"id":{"name":"obj_parede_inimigo","path":"objects/obj_parede_inimigo/obj_parede_inimigo.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
-    {"id":{"name":"obj_teste","path":"objects/obj_teste/obj_teste.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"scr_fim_da_animacao","path":"scripts/scr_fim_da_animacao/scr_fim_da_animacao.yy",},},
     {"id":{"name":"scr_player","path":"scripts/scr_player/scr_player.yy",},},

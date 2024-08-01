@@ -1,6 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_player_movendo(){
+	
 // Controlando o player
 direita = keyboard_check(ord("D"));
 esquerda = keyboard_check(ord("A"));
@@ -21,11 +22,12 @@ if direita{
 	}
 }
 
+/// força do pulo
 if !place_meeting(x, y + 1, obj_chao){
 	vveloc += gravidade;
 }else{
 	if cima{
-	vveloc = -3.5;
+	vveloc = -5.5;
 }
 }
 
@@ -46,16 +48,16 @@ if place_meeting(x,y + vveloc, obj_chao){
 }
 y += vveloc;
 
-
+/// ação de ataque
 if keyboard_check_pressed(vk_space){
 	image_index = 0;
 	estado = scr_player_atacando;
 	
 	if direc == 0{
-		instance_create_layer(x +20, y - 8, "Instances", ob_hitbox);
+		instance_create_layer(x +40, y - 18, "Instances", ob_hitbox);
 	}
 	else if direc == 1{
-		instance_create_layer(x -20, y - 8, "Instances", ob_hitbox);
+		instance_create_layer(x -40, y - 18, "Instances", ob_hitbox);
 	}
   }
 }
@@ -67,6 +69,7 @@ function scr_player_atacando(){
 		sprite_index = spr_player_atack_e;
 	}
 	
+	/// função de fim da animacao 
 	if function ScrFimDaAnimacao(){
 
 var _sprite=sprite_index;

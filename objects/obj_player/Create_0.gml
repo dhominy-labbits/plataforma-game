@@ -4,7 +4,7 @@
 direita = 0;
 esquerda = 0;
 cima = 0;
-gravidade = 0.1;
+gravidade = 0.3;
 direc = 0;
 hveloc = 0;
 vveloc = 0;

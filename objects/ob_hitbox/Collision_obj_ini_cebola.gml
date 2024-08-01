@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Dano no inimigo
 with (other){
 	vida -=1;
 }

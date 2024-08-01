@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Status
 direc = 0;
 veloc = 1;
 
