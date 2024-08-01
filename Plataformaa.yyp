@@ -37,6 +37,7 @@
   },
   "name":"Plataformaa",
   "resources":[
+    {"id":{"name":"camera","path":"objects/camera/camera.yy",},},
     {"id":{"name":"ob_hitbox","path":"objects/ob_hitbox/ob_hitbox.yy",},},
     {"id":{"name":"obj_chao","path":"objects/obj_chao/obj_chao.yy",},},
     {"id":{"name":"obj_controle","path":"objects/obj_controle/obj_controle.yy",},},
