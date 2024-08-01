@@ -5,7 +5,7 @@ if inicializar == false {
 }
 
 if keyboard_check_pressed(ord("F")) {
-	if pagina < array_length(texto) - 1 {
+	if pagina < ds_grid_height(texto_grid) - 1 {
 		pagina++;
 	} else {
 		alarm_set(0,3);

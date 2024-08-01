@@ -1,6 +1,13 @@
 /// @description Insert description here
+enum Infos {
+	Texto,
+	Retrato,
+	Lado,
+	Nome
+}
+
 npc_nome = "";
-texto[0] = "";
+texto_grid = ds_grid_create(4,0);
 pagina = 0;
 
 inicializar = false;

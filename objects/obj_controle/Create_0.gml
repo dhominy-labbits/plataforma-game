@@ -1,2 +1,2 @@
-/// @description Insert description here
+/// @description Inserir descrição aqui
 global.dialogo = false;
