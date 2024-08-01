@@ -14,3 +14,4 @@ if (alarm[0] > 0) {
 } else {
     image_alpha = 1;
 }
+
