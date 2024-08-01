@@ -18,3 +18,6 @@ alarm[0] = 0;
 inv_tempo = 180;
 
 estado = scr_player_movendo;
+
+poder = false;
+poder_carga = 0;
