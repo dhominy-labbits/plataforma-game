@@ -72,7 +72,7 @@ if inicializar == true {
 		
 		
 	} // Desenhar diálogo com o face sprite do lado direito
-	else {
+	else if texto_grid[# Infos.Lado,pagina] == 1 {
 		
 		// Desenha a caixa do face sprite + sprite
 		draw_rectangle_color(face_sprite_right_box_x1 - main_text_box_border_width, face_sprite_right_box_y1 - main_text_box_border_width, face_sprite_right_box_x2 + main_text_box_border_width, face_sprite_right_box_y2 + main_text_box_border_width, _cor_borda, _cor_borda, _cor_borda, _cor_borda, false); // Desenhar a borda da caixa do rosto
@@ -82,6 +82,13 @@ if inicializar == true {
 		//var _stgw = string_width(texto_grid[# Infos.Nome, pagina]); // Calcula largura do nome do personagem
 		//draw_text(_guil - 16 - _stgw, _yy - 32, texto_grid[# Infos.Nome, pagina]); // Desenhar nome do personagem
 		
+		// Desenha a caixa do nome do personagem + nome
+		draw_rectangle_color(char_name_right_box_x1 - main_text_box_border_width, char_name_right_box_y1 - main_text_box_border_width, char_name_right_box_x2 + char_name_box_padding + main_text_box_border_width, char_name_right_box_y2 + main_text_box_border_width, _cor_borda, _cor_borda, _cor_borda, _cor_borda, false); // Desenhar a borda da caixa do rosto
+		draw_rectangle_color(char_name_right_box_x1, char_name_right_box_y1, char_name_right_box_x2 + char_name_box_padding, char_name_right_box_y2, _cor_caixa_texto, _cor_caixa_texto, _cor_caixa_texto, _cor_caixa_texto,false); // Desenhar caixa do rosto
+		draw_text_color(char_name_right_box_x1 + char_name_box_padding, char_name_right_box_y1 + char_name_box_padding, texto_grid[# Infos.Nome, pagina],text_color, text_color, text_color, text_color, 1); // Desenhar nome do personagem
+	
+	} // Se for um personagem sem sprite, apenas desenha a caixa de nome dele
+	else {
 		// Desenha a caixa do nome do personagem + nome
 		draw_rectangle_color(char_name_right_box_x1 - main_text_box_border_width, char_name_right_box_y1 - main_text_box_border_width, char_name_right_box_x2 + char_name_box_padding + main_text_box_border_width, char_name_right_box_y2 + main_text_box_border_width, _cor_borda, _cor_borda, _cor_borda, _cor_borda, false); // Desenhar a borda da caixa do rosto
 		draw_rectangle_color(char_name_right_box_x1, char_name_right_box_y1, char_name_right_box_x2 + char_name_box_padding, char_name_right_box_y2, _cor_caixa_texto, _cor_caixa_texto, _cor_caixa_texto, _cor_caixa_texto,false); // Desenhar caixa do rosto

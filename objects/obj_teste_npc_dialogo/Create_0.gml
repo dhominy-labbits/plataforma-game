@@ -1,2 +1,2 @@
 /// @description Insert description here
-nome = "Primeiro Texto";
+nome = "cliente_fase_3_artista";

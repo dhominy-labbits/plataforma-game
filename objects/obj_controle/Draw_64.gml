@@ -42,6 +42,7 @@ draw_sprite_ext(item_sprite, 0, view_w - (sprite_w * sprite_scale) - margem + 13
 
 // Desenha o número de itens coletados ao lado da sprite com escala
 var itens_coletados_text = string(global.itens_coletados);
-var text_scale = 3.5; // Altere este valor para aumentar ou diminuir o tamanho do texto
-draw_text_transformed(view_w - (sprite_w * sprite_scale) - margem + 1450, margem + (sprite_h * sprite_scale) / 2 - 8 - 90, itens_coletados_text, text_scale, text_scale, 0);
+//var text_scale = 3.5; // Altere este valor para aumentar ou diminuir o tamanho do texto
+//draw_text_transformed(view_w - (sprite_w * sprite_scale) - margem + 1450, margem + (sprite_h * sprite_scale) / 2 - 8 - 90, itens_coletados_text, text_scale, text_scale, 0);
+draw_text_ext_transformed(view_w - (sprite_w * sprite_scale) - margem + 1450, margem + (sprite_h * sprite_scale) / 2 - 8 - 90, itens_coletados_text,1, 50, 1.5,1.5, 0);
 
