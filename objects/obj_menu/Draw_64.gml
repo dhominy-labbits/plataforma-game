@@ -24,6 +24,10 @@ for (var i = 0; i < op_max; i++){
         if(mouse_check_button_pressed(mb_left)){
             if (index == 0){
 				//audio_play_sound(snd_click_menu,0,0);
+				if (!instance_exists(obj_fade)){
+				var _targetRoom = Room1;
+				Fade(_targetRoom,60,c_black);
+				}
                 room_goto(Room1);
                 //instance_create_layer(0, 0, layer, obj_transicao);
                 obj_player.x = 32;
@@ -39,6 +43,10 @@ for (var i = 0; i < op_max; i++){
                 if file_exists("save.sav") {
                     ini_open("save.sav");
                     // Carrega informações do jogador
+					if (!instance_exists(obj_fade)){
+				var _targetRoom = ini_read_real("Jogador", "vida_atual", 5);
+				Fade(_targetRoom,60,c_black);
+				}
                     obj_player.x = ini_read_real("Jogador", "x_atual", 0);
                     obj_player.y = ini_read_real("Jogador", "y_atual", 0);
                     room_goto(ini_read_real("Jogador", "sala_atual", 0));

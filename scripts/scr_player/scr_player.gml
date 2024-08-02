@@ -57,16 +57,16 @@ if global.dialogo == false{
     y += vveloc;
 
     // Ação de ataque
-    if keyboard_check_pressed(vk_space) and global.dialogo == false {
-        image_index = 0;
-        estado = scr_player_atacando;
-        
-        if direc == 0 {
-            instance_create_layer(x + 40, y - 18, "Instances", ob_hitbox);
-        } else if direc == 1 {
-            instance_create_layer(x - 40, y - 18, "Instances", ob_hitbox);
-        }
+    if mouse_check_button_pressed(mb_right) and global.dialogo == false {
+    image_index = 0;
+    estado = scr_player_atacando;
+  
+    if direc == 0 {
+        instance_create_layer(x + 30, y - 18, "Instances", obj_hitbox);
+    } else if direc == 1 {
+        instance_create_layer(x - 30, y - 18, "Instances", obj_hitbox);
     }
+}
 }
 
 function scr_player_atacando() {
@@ -74,6 +74,20 @@ function scr_player_atacando() {
         sprite_index = spr_player_atack_d;
     } else if direc == 1 {
         sprite_index = spr_player_atack_e;
+    }
+
+    // Função de fim da animação
+    if ScrFimDaAnimacao() {
+        estado = scr_player_movendo;
+    }
+}
+
+function scr_player_disparando() {
+    if direc == 0 {
+		// Se quiser resetar o sprite para o 0 
+        sprite_index = spr_player_charge_D;
+    } else if direc == 1 {
+        sprite_index = spr_player_charge_E;
     }
 
     // Função de fim da animação

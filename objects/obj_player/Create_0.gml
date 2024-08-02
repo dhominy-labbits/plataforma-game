@@ -23,3 +23,5 @@ estado = scr_player_movendo;
 
 poder = false;
 poder_carga = 0;
+cooldown = 0; // Variável para controlar o tempo de recarga
+cooldown_max = 60; // Tempo de recarga (em frames)

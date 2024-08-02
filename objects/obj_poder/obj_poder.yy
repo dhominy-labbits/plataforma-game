@@ -11,8 +11,8 @@
   "name":"obj_poder",
   "overriddenProperties":[],
   "parent":{
-    "name":"PLAYER",
-    "path":"folders/Objects/PLAYER.yy",
+    "name":"Itens",
+    "path":"folders/Objects/Itens.yy",
   },
   "parentObjectId":null,
   "persistent":false,
