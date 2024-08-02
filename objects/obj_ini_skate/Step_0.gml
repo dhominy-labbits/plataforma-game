@@ -16,10 +16,10 @@ if place_meeting(x,y, obj_parede_inimigo){
 
 // andando para direita
 if direc == 0{
-	sprite_index = spr_cebola_andando_direita;
+	sprite_index = spr_skate_d;
 	x += veloc;
 } // andar para esquerda
 else if direc ==1{
-	sprite_index = spr_cebola_andando_esquerda;
+	sprite_index = spr_skate_e;
 	x -= veloc;
 }

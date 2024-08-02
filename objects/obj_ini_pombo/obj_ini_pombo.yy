@@ -39,9 +39,6 @@
     "name":"spr_pombo_d",
     "path":"sprites/spr_pombo_d/spr_pombo_d.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_cebola_andando_direita",
-    "path":"sprites/spr_cebola_andando_direita/spr_cebola_andando_direita.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }

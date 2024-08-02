@@ -36,12 +36,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_cebola_andando_direita",
-    "path":"sprites/spr_cebola_andando_direita/spr_cebola_andando_direita.yy",
+    "name":"spr_skate_d",
+    "path":"sprites/spr_skate_d/spr_skate_d.yy",
   },
   "spriteMaskId":{
-    "name":"spr_cebola_andando_direita",
-    "path":"sprites/spr_cebola_andando_direita/spr_cebola_andando_direita.yy",
+    "name":"spr_skate_d",
+    "path":"sprites/spr_skate_d/spr_skate_d.yy",
   },
   "visible":true,
 }
