@@ -42,6 +42,7 @@
   },
   "name":"Plataformaa",
   "resources":[
+    {"id":{"name":"pixelify","path":"fonts/pixelify/pixelify.yy",},},
     {"id":{"name":"camera","path":"objects/camera/camera.yy",},},
     {"id":{"name":"ob_hitbox","path":"objects/ob_hitbox/ob_hitbox.yy",},},
     {"id":{"name":"obj_chao","path":"objects/obj_chao/obj_chao.yy",},},
@@ -75,6 +76,8 @@
     {"id":{"name":"spr_hitbox","path":"sprites/spr_hitbox/spr_hitbox.yy",},},
     {"id":{"name":"spr_ini_disparo","path":"sprites/spr_ini_disparo/spr_ini_disparo.yy",},},
     {"id":{"name":"spr_level","path":"sprites/spr_level/spr_level.yy",},},
+    {"id":{"name":"spr_option_box","path":"sprites/spr_option_box/spr_option_box.yy",},},
+    {"id":{"name":"spr_option_selector","path":"sprites/spr_option_selector/spr_option_selector.yy",},},
     {"id":{"name":"spr_parede_inimigo","path":"sprites/spr_parede_inimigo/spr_parede_inimigo.yy",},},
     {"id":{"name":"spr_parede_troca","path":"sprites/spr_parede_troca/spr_parede_troca.yy",},},
     {"id":{"name":"spr_player_atack_d","path":"sprites/spr_player_atack_d/spr_player_atack_d.yy",},},
@@ -98,8 +101,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
   ],
