@@ -15,6 +15,11 @@ if (alarm[0] > 0) {
     image_alpha = 1;
 }
 
+// Morte//
+if (vida <= 0 && !instance_exists(obj_game_over_screen)) {
+  instance_create_layer(0, 0, "Instance_tr", obj_game_over_screen); // Cria a tela de "Game Over"
+}
+
 #region Diálogo
 if distance_to_object(obj_par_npc) <= 10 {
 	if keyboard_check_pressed(ord("F")) and global.dialogo == false {

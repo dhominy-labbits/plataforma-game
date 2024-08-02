@@ -1,8 +1,8 @@
 {
   "$GMSprite":"",
   "%Name":"spr_poder",
-  "bboxMode":0,
-  "bbox_bottom":4,
+  "bboxMode":2,
+  "bbox_bottom":3,
   "bbox_left":0,
   "bbox_right":16,
   "bbox_top":0,

@@ -1,6 +1,15 @@
 /// @description UI
 
-//
+// CORAÇÃO VAZIO
+var _sprl2 = sprite_get_width(spr_vida2);
+var _buffer2 = 40;
+var _vidas2 = obj_player.vida2;
+
+//looping perfeito para atualizar vidas / DESENHAR VIDAS
+for (var i = 0; i < _vidas2; i++;){
+	draw_sprite_ext(spr_vida2, 0, 20 + (_sprl2 * i) + (_buffer2 * i), 40, 2.2, 2.2,0, c_white, 1);
+}
+//	CORAÇÂO CHEIO
 var _sprl = sprite_get_width(spr_vida);
 var _buffer = 40;
 var _vidas = obj_player.vida;

@@ -14,6 +14,7 @@ veloc = 3;
 
 // Combate
 vida = 5;
+vida2 = 5;
 alfa_hit = 0;
 alarm[0] = 0;
 inv_tempo = 180;
