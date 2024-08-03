@@ -56,6 +56,11 @@ if inicializar == true {
 	draw_rectangle_color(main_text_box_x1 - main_text_box_border_width, main_text_box_y1 - main_text_box_border_width, main_text_box_x2 + main_text_box_border_width, main_text_box_y2 + main_text_box_border_width,_cor_borda, _cor_borda, _cor_borda, _cor_borda, false); // Desenhar a borda da caixa de texto
 	draw_rectangle_color(main_text_box_x1,main_text_box_y1,main_text_box_x2,main_text_box_y2,_cor_caixa_texto, _cor_caixa_texto, _cor_caixa_texto, _cor_caixa_texto,false); // Desenhar caixa de texto
 	draw_text_ext_color(main_text_box_x1 + 30, main_text_box_y1 + 73 + 16, _texto, 32, _guil - 264,text_color, text_color, text_color, text_color,1); // Desenhar fala na caixa de texto
+	
+	// Desenhar sprite animado no canto inferior direito
+    var sprite_x = main_text_box_x2 - sprite_get_width(spr_next_indicator) - 10;
+    var sprite_y = main_text_box_y2 - sprite_get_height(spr_next_indicator) - 10;
+    draw_sprite(spr_next_indicator, 0, sprite_x, sprite_y);
 
 	// Desenhar diálogo com o face sprite do lado esquerdo
 	if texto_grid[# Infos.Lado,pagina] == 0 {

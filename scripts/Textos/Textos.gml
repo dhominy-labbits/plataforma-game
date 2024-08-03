@@ -28,17 +28,17 @@ function scr_textos(){
 			ds_grid_add_text("Ouvi ela na hora certa, Caio, deixe de aperreio. E agora é hora de ir catar coquinhos que nem ela diz!",spr_retrato_keko, 0,"Keko");
 			break;
 		
+		case "dialogo_caramelo_fase_1":
+			ds_grid_add_text("Espia só, até que nem demorou muito dona Keko! Tá ficando ligeirinha viu?",spr_retrato_caramelo, 1,"Caio Melo");	
+			ds_grid_add_text("E tu vai comer as cocada pra tá com essa pressa toda menino? Te endireite.",spr_retrato_keko, 0,"Keko");
+			ds_grid_add_text("É fogo viu? Mas vamo pra casa, e lá me conta mais das fofoca da praia, que se tem um lugar com fofoca é a orla.",spr_retrato_caramelo, 1,"Caio Melo");	
+			break;
+		
 		case "dialogo_caramelo_fase_2":
 			ds_grid_add_text("Ai ai, deu trabalho viu? Onde já se viu tanto rato na orla? E aqueles moleques zanzando de skate, tão me achando com cara de ginasta pra ficar pulando deles o tempo todo?", spr_retrato_keko, 0,"Keko");
 			ds_grid_add_text("Deixe de tua rabugentisse, Keko.",spr_retrato_caramelo, 1,"Caio Melo");	
 			ds_grid_add_text("Ainda bem que dessa vez eram só os cocos!! Imagina se fosse o que torna suas cocadas realmente mágicas",spr_retrato_caramelo, 1,"Caio Melo");
 			ds_grid_add_text("Shhh!!! Tá falando demais, vambora que é hora de fazer essa mistura",spr_retrato_keko, 0,"Keko");
-			break;
-			
-			case "dialogo_caramelo_fase_1":
-			ds_grid_add_text("Espia só, até que nem demorou muito dona Keko! Tá ficando ligeirinha viu?",spr_retrato_caramelo, 1,"Caio Melo");	
-			ds_grid_add_text("E tu vai comer as cocada pra tá com essa pressa toda menino? Te endireite.",spr_retrato_keko, 0,"Keko");
-			ds_grid_add_text("É fogo viu? Mas vamo pra casa, e lá me conta mais das fofoca da praia, que se tem um lugar com fofoca é a orla.",spr_retrato_caramelo, 1,"Caio Melo");	
 			break;
 			
 		case "dialogo_caramelo_fase_3":
@@ -71,7 +71,7 @@ function scr_textos(){
 				
 				case "tristonho_resp_certa":
 					ds_grid_add_text("Nossa era exatamente isso que eu precisava. Muito obrigado!", spr_retrato_caramelo, 2,"Homem tristonho");
-					//TODO: Adicionar um ponto ou algo score
+					global.clientes_satisfeitos++;
 					break;
 				case "tristonho_resp_errada":
 					ds_grid_add_text("Eu... Não acho que isso me ajudaria muito. Melhor comprar em outro lugar...", spr_retrato_caramelo, 2,"Homem tristonho");
@@ -87,7 +87,7 @@ function scr_textos(){
 				
 				case "esportista_resp_certa":
 					ds_grid_add_text("Eu não me sentia assim há anos! Muito obrigado!", spr_retrato_caramelo, 2,"Esportista Desanimado");
-					//TODO: Adicionar um ponto ou algo score
+					global.clientes_satisfeitos++;
 					break;
 				case "esportista_resp_errada":
 					ds_grid_add_text("Eu não acho que isso vai melhorar meus resultado Desculpe, mas parece que você não tem o que eu preciso", spr_retrato_caramelo, 2,"Esportista Desanimado");
@@ -103,7 +103,7 @@ function scr_textos(){
 				
 				case "artista_resp_certa":
 					ds_grid_add_text("Nossa! Só o cheirinho dessa cocada já me trouxe a ideia que eu preisava! Brigada demais moça!", spr_retrato_caramelo, 2,"Artista Cansado");
-					//TODO: Adicionar um ponto ou algo score
+					global.clientes_satisfeitos++;
 					break;
 				case "artista_resp_errada":
 					ds_grid_add_text("Ai não moça... Eu vou continuar tão perdida quanto. Talvez em outro lugar eu encontre uma ajuda.", spr_retrato_caramelo, 2,"Artista Cansado");
@@ -124,11 +124,21 @@ function scr_textos(){
 				
 				case "timida_resp_certa":
 					ds_grid_add_text("Meu Deus! Como eu pude não enxergar isso em mim? Eu ganhei o dia hoje com essa cocada, Muito obrigado!", spr_retrato_caramelo, 2,"Moça Tímida");
-					//TODO: Adicionar um ponto ou algo score
+					global.clientes_satisfeitos++;
 					break;
 				case "timida_resp_errada":
 					ds_grid_add_text("Não adianta. Mesmo com essa cocada eu continuo terrível...", spr_retrato_caramelo, 2,"Moça Tímida");
 					break;
+					
+		case "pontuacao_final_falha": 
+			ds_grid_add_text("Parece que a Keko não conseguiu atender às expectativas de todos os seus clientes.", spr_retrato_caramelo, 1,"Caio Melo");
+			ds_grid_add_text("Preste mais atenção nas necessidades deles e tente novamente!", spr_retrato_caramelo, 1,"Caio Melo");
+			break;
+			
+		case "pontuacao_final_sucesso": 
+			ds_grid_add_text("Parabéns! Você prestou atenção nas expectativas dos clientes e as vendas foram um sucesso", spr_retrato_caramelo, 1,"Caio Melo");
+			global.venceu_jogo = true;
+			break;
 					
 	}
 }

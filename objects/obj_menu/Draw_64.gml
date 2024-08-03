@@ -14,9 +14,16 @@ var btn_shadow_color = $402751;
 
 var text_color = $7a367b;
 
+var creditos_titulo_cor = c_white;
+var creditos_nomes_cor = c_white;
+
 var margin = 90;
 var m_x = device_mouse_x_to_gui(0);
 var m_y = device_mouse_y_to_gui(0);
+
+var creditos_x = (gui_width / 2);
+var creditos_y = (gui_height / 2 - 100);
+var creditos_nomes_espaco = 48;
 
 //draw_set_halign(fa_center);
 
@@ -94,9 +101,13 @@ for (var i = 0; i < op_max; i++){
                 }
             }
             
-            if (index == 2){ //Opções
+            if (index == 2){ //Créditos
 				audio_play_sound(snd_click_menu,0,0);
-                room_goto(Room2);
+                if mostrando_creditos == false {
+					mostrando_creditos = true;
+				} else {
+					mostrando_creditos = false;
+				}
             }
             
             if (index == 3){ // Créditos
@@ -111,7 +122,21 @@ for (var i = 0; i < op_max; i++){
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 	
-    draw_text(x1 + btn_width /2, btn_y2 - (btn_heigth / 2), options[i]);
+    // Desenha das palavras dos botões do Menu
+	draw_text(x1 + btn_width /2, btn_y2 - (btn_heigth / 2), options[i]);
+	
+	// Desenhar os créditos, se true
+	if mostrando_creditos == true {
+		draw_text_color(creditos_x, creditos_y,"Design", creditos_titulo_cor, creditos_titulo_cor, creditos_titulo_cor, creditos_titulo_cor, 1);
+		draw_text_color(creditos_x, creditos_y + (1 * creditos_nomes_espaco),"Gab Santos", creditos_nomes_cor, creditos_nomes_cor, creditos_nomes_cor, creditos_nomes_cor, 1);
+		draw_text_color(creditos_x, creditos_y + (2 * creditos_nomes_espaco),"Dante Martins", creditos_nomes_cor, creditos_nomes_cor, creditos_nomes_cor, creditos_nomes_cor, 1);
+		draw_text_color(creditos_x, creditos_y + (3 * creditos_nomes_espaco),"Oliver Brito", creditos_nomes_cor, creditos_nomes_cor, creditos_nomes_cor, creditos_nomes_cor, 1);
+		
+		draw_text_color(creditos_x, creditos_y + (5 * creditos_nomes_espaco),"Programação", creditos_titulo_cor, creditos_titulo_cor, creditos_titulo_cor, creditos_titulo_cor, 1);
+		draw_text_color(creditos_x, creditos_y + (6 * creditos_nomes_espaco),"Dhominy Murilo", creditos_nomes_cor, creditos_nomes_cor, creditos_nomes_cor, creditos_nomes_cor, 1);
+		draw_text_color(creditos_x, creditos_y + (7 * creditos_nomes_espaco),"Luis Santos", creditos_nomes_cor, creditos_nomes_cor, creditos_nomes_cor, creditos_nomes_cor, 1);
+		
+	}
 	
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);

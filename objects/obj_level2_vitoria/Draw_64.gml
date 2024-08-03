@@ -26,6 +26,7 @@ draw_rectangle(x1, y1, x2, y2, false);
 
 // Desenhar mensagem dentro do retângulo principal
 draw_set_color(c_white);
+draw_set_font(pixelify_gameover);
 draw_text((largura / 2) - (string_width(mensagem) / 2), (altura / 2) - (string_height(mensagem) / 2), mensagem);
 
 // Desenhar botão
