@@ -70,10 +70,10 @@ for (var i = 0; i < op_max; i++){
             if (index == 0){ // Novo jogo
 				//audio_play_sound(snd_click_menu,0,0);
 				if (!instance_exists(obj_fade)){
-				var _targetRoom = Room1;
+				var _targetRoom = Room_inicial;
 				Fade(_targetRoom,60,c_black);
 				}
-                room_goto(Room1);
+                room_goto(Room_inicial);
                 //instance_create_layer(0, 0, layer, obj_transicao);
                 obj_player.x = 32;
                 obj_player.y = 315;

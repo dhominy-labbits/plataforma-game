@@ -10,7 +10,7 @@ if inicializar == false {
 			caractere = string_length(texto_grid[# Infos.Texto, pagina]);
 		}
 	} else {
-		show_debug_message("Próximo");
+		//show_debug_message("Próximo");
 		
 		if pagina < ds_grid_height(texto_grid) - 1 { //Verifica se ainda há páginas de diálogo
 			if keyboard_check_pressed(ord("F")) {
