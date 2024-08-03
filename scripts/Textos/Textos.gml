@@ -139,6 +139,11 @@ function scr_textos(){
 			ds_grid_add_text("Parabéns! Você prestou atenção nas expectativas dos clientes e as vendas foram um sucesso", spr_retrato_caramelo, 1,"Caio Melo");
 			global.venceu_jogo = true;
 			break;
+			
+		case "final_jogo":
+			ds_grid_add_text("Graças à você, a Keko agradou todos seus clientes e, assim, recarregou sua energia mágica.", spr_retrato_caramelo, 1,"Caio Melo");
+			ds_grid_add_text("Se continuar se dedicando ao seu negócio, em breve ela será uma bruxa muito poderosa!", spr_retrato_caramelo, 1,"Caio Melo");
+			break;
 					
 	}
 }
