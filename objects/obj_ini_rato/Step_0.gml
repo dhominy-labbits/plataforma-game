@@ -1,6 +1,23 @@
 /// @description Insert description here
-event_inherited();
+/// @description Inserir descrição aqui
+if hit == true{
+	veloc = 0;
+	alarm[1] = 5;
+	hit = false;
+audio_play_sound(SFX_RATO, 1, false);
+}
 
+if vida <=0{
+	
+	if reset == false{
+		image_index = 0;
+		reset = true;
+	}
+	sprite_index = sprite_morrendo;
+	if scr_fim_da_animacao(){
+		instance_destroy();
+	}
+}
 if vida > 0{
 // colidir com a parede inimigo, muda a direção
 if place_meeting(x,y, obj_parede_inimigo){

@@ -27,7 +27,7 @@ var cam = view_camera[0]; // Supondo que você esteja usando a view 0
 var view_w = camera_get_view_width(cam);
 
 // Defina a sprite do item
-var item_sprite = spr_potion; // Substitua por sua sprite do item
+var item_sprite = spr_coco; // Substitua por sua sprite do item
 var margem = 40;
 
 // Obtenha a largura e altura da sprite

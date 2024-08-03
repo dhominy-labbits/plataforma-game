@@ -25,3 +25,7 @@ poder = false;
 poder_carga = 0;
 cooldown = 0; // Variável para controlar o tempo de recarga
 cooldown_max = 60; // Tempo de recarga (em frames)
+
+/// Create Event
+cooldown_w = 0;
+cooldown_max_w = 60; // Número de frames para o cooldown (1 segundo se room_speed for 60)

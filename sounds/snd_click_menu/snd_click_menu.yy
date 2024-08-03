@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.075351,
+  "duration":1.0,
   "name":"snd_click_menu",
   "parent":{
     "name":"Sounds",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_click_menu.ogg",
+  "soundFile":"snd_click_menu.wav",
   "type":0,
   "volume":1.0,
 }

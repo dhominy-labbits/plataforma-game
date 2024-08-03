@@ -5,7 +5,7 @@ display_set_gui_size(view_w,view_h);
 
 /// Create Event
 ponto = 0;
-ponto_max = 10;
+ponto_max = 18;
 pontobar_h = 100; // Altura máxima da barra
 pontobar_w = 15; // Largura da barra
 color_1 = c_green;

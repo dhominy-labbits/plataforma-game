@@ -30,3 +30,18 @@ if distance_to_object(obj_par_npc) <= 10 {
 	}
 }
 #endregion
+
+
+// Verificar todos os objetos obj_caramelo na sala
+var nearest_caramelo = instance_nearest(x, y, obj_caramelo);
+
+// Verificar se a distância ao obj_caramelo é menor ou igual a 15
+if (nearest_caramelo != noone && point_distance(x, y, nearest_caramelo.x, nearest_caramelo.y) <= 15) {
+    // Verificar se a tecla F foi pressionada
+    if (keyboard_check_pressed(ord("F"))) {
+        // Destruir o objeto pelo ID
+        with (nearest_caramelo) {
+            instance_destroy(inst_2A9AF8DA);
+        }
+    }
+}

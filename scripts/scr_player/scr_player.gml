@@ -1,45 +1,58 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_player_movendo() {
     // Controlando o player
     direita = keyboard_check(ord("D"));
     esquerda = keyboard_check(ord("A"));
     cima = keyboard_check_pressed(ord("W"));
 
-if global.dialogo == false{
-    hveloc = (direita - esquerda) * veloc;
-    if direita {
-        direc = 0;
-        if place_meeting(x, y + 1, obj_chao) {
-            sprite_index = spr_player_run;
+    if global.dialogo == false {
+        hveloc = (direita - esquerda) * veloc;
+        if direita {
+            direc = 0;
+            if place_meeting(x, y + 1, obj_chao) {
+                sprite_index = spr_player_run;
+            }
+        } else if esquerda {
+            direc = 1;
+            if place_meeting(x, y + 1, obj_chao) {
+                sprite_index = spr_player_run2;
+            }
+        } else {
+            if direc == 0 {
+                sprite_index = spr_player_idle;
+            } else if direc == 1 {
+                sprite_index = spr_player_idle2;
+            }
         }
-    } else if esquerda {
-        direc = 1;
-        if place_meeting(x, y + 1, obj_chao) {
-            sprite_index = spr_player_run2;
+
+        // Aplicando a gravidade e mudando a sprite de pulo conforme a direção
+        if !place_meeting(x, y + 1, obj_chao) {
+            vveloc += gravidade;
+            if direc == 0 {
+                sprite_index = spr_player_jump;
+            } else if direc == 1 {
+                sprite_index = spr_player_jump2;
+            }
+        } else {
+            if cima {
+                vveloc = -5.5;
+            }
         }
-    } else {
-        if direc == 0 {
-            sprite_index = spr_player_idle;
-        } else if direc == 1 {
-            sprite_index = spr_player_idle2;
+
+        // Reduzir o cooldown a cada frame
+        if (cooldown_w > 0) {
+            cooldown_w--;
+        }
+
+        // Reproduzir o áudio e iniciar o cooldown se a tecla W for pressionada
+        if keyboard_check_pressed(ord("W")) {
+			
+            if (cooldown_w <= 0) {
+                audio_play_sound(snd_pulo, 1, false);
+                cooldown_w = cooldown_max_w;
+            }
         }
     }
 
-    // Aplicando a gravidade e mudando a sprite de pulo conforme a direção
-    if !place_meeting(x, y + 1, obj_chao) {
-        vveloc += gravidade;
-        if direc == 0 {
-            sprite_index = spr_player_jump;
-        } else if direc == 1 {
-            sprite_index = spr_player_jump2;
-        }
-    } else {
-        if cima {
-            vveloc = -5.5;
-        }
-    }
-}
     if place_meeting(x + hveloc, y, obj_chao) {
         while !place_meeting(x + sign(hveloc), y, obj_chao) {
             x += sign(hveloc);
@@ -58,15 +71,17 @@ if global.dialogo == false{
 
     // Ação de ataque
     if mouse_check_button_pressed(mb_right) and global.dialogo == false {
-    image_index = 0;
-    estado = scr_player_atacando;
-  
-    if direc == 0 {
-        instance_create_layer(x + 30, y - 18, "Instances", obj_hitbox);
-    } else if direc == 1 {
-        instance_create_layer(x - 30, y - 18, "Instances", obj_hitbox);
+        image_index = 0;
+        
+        audio_play_sound(SFX_ESPADA, 1, false);
+        estado = scr_player_atacando;
+      
+        if direc == 0 {
+            instance_create_layer(x + 30, y - 18, "Instances", obj_hitbox);
+        } else if direc == 1 {
+            instance_create_layer(x - 30, y - 18, "Instances", obj_hitbox);
+        }
     }
-}
 }
 
 function scr_player_atacando() {
@@ -84,7 +99,7 @@ function scr_player_atacando() {
 
 function scr_player_disparando() {
     if direc == 0 {
-		// Se quiser resetar o sprite para o 0 
+        // Se quiser resetar o sprite para o 0 
         sprite_index = spr_player_charge_D;
     } else if direc == 1 {
         sprite_index = spr_player_charge_E;

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Level",
-    "path":"folders/Sprites/Level.yy",
+    "name":"level1",
+    "path":"folders/Sprites/level1.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

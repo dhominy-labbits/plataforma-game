@@ -2,7 +2,7 @@
 // Você pode escrever seu código neste editor
 // Tocar a música em loop
 
-if obj_barra.ponto >=10{
+if obj_barra.ponto >=18{
 	instance_destroy(obj_level2_controle);
 	instance_create_layer(256, 0, "Instances", obj_level2_vitoria);
 }

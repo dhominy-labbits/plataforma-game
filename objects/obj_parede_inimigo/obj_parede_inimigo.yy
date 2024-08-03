@@ -32,5 +32,5 @@
     "path":"sprites/spr_parede_inimigo/spr_parede_inimigo.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

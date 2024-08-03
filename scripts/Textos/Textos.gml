@@ -35,6 +35,12 @@ function scr_textos(){
 			ds_grid_add_text("Shhh!!! Tá falando demais, vambora que é hora de fazer essa mistura",spr_retrato_keko, 0,"Keko");
 			break;
 			
+			case "dialogo_caramelo_fase_1":
+			ds_grid_add_text("Espia só, até que nem demorou muito dona Keko! Tá ficando ligeirinha viu?",spr_retrato_caramelo, 1,"Caio Melo");	
+			ds_grid_add_text("E tu vai comer as cocada pra tá com essa pressa toda menino? Te endireite.",spr_retrato_keko, 0,"Keko");
+			ds_grid_add_text("É fogo viu? Mas vamo pra casa, e lá me conta mais das fofoca da praia, que se tem um lugar com fofoca é a orla.",spr_retrato_caramelo, 1,"Caio Melo");	
+			break;
+			
 		case "dialogo_caramelo_fase_3":
 			ds_grid_add_text("Eu sempre acho que faço isso ligeiro, mas sempre saio com uma caimbrã no braço, ai ai ai…", spr_retrato_keko, 0,"Keko");
 			ds_grid_add_text("Bom, chega de me endoidar com isso. Agora é hora de fazer algumas pessoinhas felizes!",spr_retrato_keko, 0,"Keko");	

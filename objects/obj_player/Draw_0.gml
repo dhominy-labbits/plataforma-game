@@ -21,6 +21,7 @@ if (poder == true) {
     if (cooldown <= 0) {
         if (mouse_check_button_pressed(mb_left)) {
             obj_player.estado = scr_player_disparando;
+			audio_play_sound(SFX_MAGIC_ATTACK, 1, false);
             var inst = instance_create_layer(x + xx, y + yy - 10, "Instances", obj_poder);
             inst.melhoria = false;
             inst.direction = dir;
