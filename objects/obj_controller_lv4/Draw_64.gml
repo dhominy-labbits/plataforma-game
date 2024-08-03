@@ -2,7 +2,7 @@
 // Variáveis de texto
 var texto_superior = "Você venceu";
 var texto_meio = "Você é uma pessoa com talento para vendas! Continue investindo nisto!";
-var texto_inferior = "Pressione qualquer tecla para sair do jogo";
+var texto_inferior = "Pressioneo X no canto superior direito da janela para sair";
 
 // Definir cor do texto
 draw_set_color(c_black);
@@ -32,8 +32,8 @@ draw_text(largura_tela / 2, posicao_inferior_y, texto_inferior);
 //	game_end();
 //}
 
-if pode_fechar == false {
-	pode_fechar = true;
-	alarm[0] = 60 * 2;
-}
+//if pode_fechar == false {
+//	pode_fechar = true;
+//	alarm[0] = 60 * 2;
+//}
 

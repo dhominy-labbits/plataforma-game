@@ -15,10 +15,10 @@ var by2 = by1 + botao_altura;
 if (device_mouse_x_to_gui(0) >= bx1 && device_mouse_x_to_gui(0) <= bx2 && device_mouse_y_to_gui(0) >= by1 && device_mouse_y_to_gui(0) <= by2) {
     // Trocar para a próxima sala (substitua "sala_proxima" pelo nome da sua sala)
 	if (!instance_exists(obj_fade)){
-				var _targetRoom = Room3;
+				var _targetRoom = Room3_pre;
 				Fade(_targetRoom,60,c_black);
 				}
 				
-    room_goto(Room3);
+    room_goto(Room3_pre);
 	audio_play_sound(snd_vitoria, 1, false);
 }

@@ -42,10 +42,10 @@ function scr_textos(){
 			break;
 			
 		case "dialogo_caramelo_fase_3":
-			ds_grid_add_text("Eu sempre acho que faço isso ligeiro, mas sempre saio com uma caimbrã no braço, ai ai ai…", spr_retrato_keko, 0,"Keko");
+			ds_grid_add_text("Eu sempre acho que faço isso ligeiro, mas sempre saio com uma caimbrã no braço, ai ai ai...", spr_retrato_keko, 0,"Keko");
 			ds_grid_add_text("Bom, chega de me endoidar com isso. Agora é hora de fazer algumas pessoinhas felizes!",spr_retrato_keko, 0,"Keko");	
-			ds_grid_add_text("Ai, ai, já consigo ver a barraquinha toda prontinha!! Os enfeites, as filas quilométricas…",spr_retrato_keko, 0,"Keko");
-			ds_grid_add_text("Vá ficar avoada por ai que não vai ter nem barraca nem nada, se eu fosse teu cliente…",spr_retrato_caramelo, 1,"Caio Melo");
+			ds_grid_add_text("Ai, ai, já consigo ver a barraquinha toda prontinha!! Os enfeites, as filas quilométricas...",spr_retrato_keko, 0,"Keko");
+			ds_grid_add_text("Vá ficar avoada por ai que não vai ter nem barraca nem nada, se eu fosse teu cliente...",spr_retrato_caramelo, 1,"Caio Melo");
 			ds_grid_add_text("Deixe de tua manha menino! Vamo que tá na hora de resolver uns probleminhas!",spr_retrato_keko, 0,"Keko");
 			break;
 			
