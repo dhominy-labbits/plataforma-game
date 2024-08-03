@@ -1,12 +1,11 @@
-/// Draw GUI Event
-
 // Coordenadas e tamanhos
 var largura = display_get_gui_width();
 var altura = display_get_gui_height();
-var retangulo_largura = 300;
-var retangulo_altura = 100;
-var botao_largura = 150;
-var botao_altura = 50;
+var escala = 1.5;
+var retangulo_largura = 300 * escala;
+var retangulo_altura = 100 * escala;
+var botao_largura = 150 * escala;
+var botao_altura = 50 * escala;
 
 // Coordenadas do retângulo principal
 var x1 = (largura / 2) - (retangulo_largura / 2);

@@ -1,3 +1,3 @@
 /// Create Event
-mensagem = "Voce conseguiu! Fez a Cocada";
+mensagem = "Voce conseguiu!";
 botao_mensagem = "Continuar";
