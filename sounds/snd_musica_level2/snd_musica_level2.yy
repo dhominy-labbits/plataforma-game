@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":152.00073,
+  "duration":120.000725,
   "name":"snd_musica_level2",
   "parent":{
     "name":"Sounds",

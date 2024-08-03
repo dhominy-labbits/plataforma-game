@@ -1,5 +1,5 @@
 // Definindo as opções do menu
-options = ["Tentar Novamente", "Recomeçar do inicio", "Fechar Jogo"];
+options = ["Tentar Novamente", "Fechar Jogo"];
 op_max = array_length(options);
 index = 0;
 

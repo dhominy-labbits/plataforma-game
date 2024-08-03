@@ -39,6 +39,7 @@
     {"name":"inst_50EBFD29","path":"rooms/Room3/Room3.yy",},
     {"name":"inst_2DD37CC8","path":"rooms/Room3/Room3.yy",},
     {"name":"inst_E7BB2B8","path":"rooms/Room3/Room3.yy",},
+    {"name":"inst_40A9EAE4","path":"rooms/Room3/Room3.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -86,6 +87,7 @@
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_64C28CC3_1_1","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_64C28CC3_1_1","objectId":{"name":"obj_parede_troca","path":"objects/obj_parede_troca/obj_parede_troca.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":192.0,},
         {"$GMRInstance":"v1","%Name":"inst_2DD37CC8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2DD37CC8","objectId":{"name":"obj_keko_venda","path":"objects/obj_keko_venda/obj_keko_venda.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":153.0,"y":180.0,},
+        {"$GMRInstance":"v1","%Name":"inst_40A9EAE4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_40A9EAE4","objectId":{"name":"obj_trilha2","path":"objects/obj_trilha2/obj_trilha2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-32.0,"y":128.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Feira","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_1A050E19","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_1A050E19","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_feira","path":"sprites/spr_feira/spr_feira.yy",},"x":0.0,"y":-96.0,},

@@ -39,7 +39,7 @@ for (var i = 0; i < op_max; i++){
 	index = i;
 	
 	if(mouse_check_button_pressed(mb_left)){
-		if (index == 1){
+		if (index == 0){
 		room_goto(Room1); // MUDAR ISSO
 		instance_destroy(obr_auto_tutorial_trigger);
 		obj_player.x = 32;
@@ -47,14 +47,11 @@ for (var i = 0; i < op_max; i++){
 		obj_player.vida =5;
 		//obj_personagem.tomardano = true;
 		obj_player.estado = scr_player_movendo;
+		draw_set_halign(fa_left);
 		}
 		
-		if (index == 2){
+		if (index == 1){
 			game_end();
-		}
-		
-		if (index == 0){
-				
 		}
 	}
 	}else {

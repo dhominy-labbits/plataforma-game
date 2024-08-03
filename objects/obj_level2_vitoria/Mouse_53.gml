@@ -18,5 +18,7 @@ if (device_mouse_x_to_gui(0) >= bx1 && device_mouse_x_to_gui(0) <= bx2 && device
 				var _targetRoom = Room3;
 				Fade(_targetRoom,60,c_black);
 				}
+				
     room_goto(Room3);
+	audio_play_sound(snd_vitoria, 1, false);
 }
