@@ -1,4 +1,7 @@
 // Step event
+global.dialogo = true;
+obj_player.x = 0;
+obj_player.y = 0;
 var gui_height = display_get_gui_height();
 if (!animation_done) {
     rect_height_top += animation_speed;

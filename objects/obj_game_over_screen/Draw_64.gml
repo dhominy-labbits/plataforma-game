@@ -47,6 +47,9 @@ for (var i = 0; i < op_max; i++){
 		obj_player.vida =5;
 		//obj_personagem.tomardano = true;
 		obj_player.estado = scr_player_movendo;
+		global.dialogo = false;
+		instance_destroy(obj_player);
+		
 		draw_set_halign(fa_left);
 		}
 		

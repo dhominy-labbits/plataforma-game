@@ -18,7 +18,7 @@ if (poder == true) {
     draw_sprite_ext(spr_poder, poder_anim_index, x + xx, y - 10 + yy, 1, 1, dir, c_white, 1);
 
     // Verificar se o tempo de recarga terminou
-    if (cooldown <= 0) {
+    if (cooldown <= 0) and global.dialogo = false{
         if (mouse_check_button_pressed(mb_left)) {
             obj_player.estado = scr_player_disparando;
 			audio_play_sound(SFX_MAGIC_ATTACK, 1, false);

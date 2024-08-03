@@ -5,7 +5,7 @@ view_h = camera_get_view_height(view_camera[0]);
 
 /// Create Event
 ponto = 0;
-ponto_max = 18;
+ponto_max = 25;
 pontobar_h = 200; // Altura máxima da barra
 pontobar_w = 90; // Largura da barra
 color_1 = c_green;
