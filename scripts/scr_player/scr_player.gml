@@ -74,6 +74,7 @@ function scr_player_movendo() {
         image_index = 0;
         
         audio_play_sound(SFX_ESPADA, 1, false);
+        audio_play_sound(Espada3, 1, false);
         estado = scr_player_atacando;
       
         if direc == 0 {

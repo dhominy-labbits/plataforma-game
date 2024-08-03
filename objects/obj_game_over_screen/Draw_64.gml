@@ -16,12 +16,6 @@ draw_rectangle(0, gui_height - rect_height_bottom, gui_width, gui_height, false)
 
 if (animation_done) {
 	
-	if file_exists("save.sav") {
-                    ini_open("save.sav");
-                    // Carrega informações do jogador
-                    obj_player.x = ini_read_real("Jogador", "x_atual", 0);
-                    obj_player.y = ini_read_real("Jogador", "y_atual", 0);
-					ini_close();
 }
     
 // draw_set_font(fnt_menu); ------------------------		FONTEEE
@@ -47,12 +41,12 @@ for (var i = 0; i < op_max; i++){
 	if(mouse_check_button_pressed(mb_left)){
 		if (index == 1){
 		room_goto(Room1); // MUDAR ISSO
+		instance_destroy(obr_auto_tutorial_trigger);
 		obj_player.x = 32;
-		obj_player.y = 315;
-		obj_player.vida +=20;
+		obj_player.y = 285;
+		obj_player.vida =5;
 		//obj_personagem.tomardano = true;
 		obj_player.estado = scr_player_movendo;
-		instance_create_layer(0, 0, "Instances", obj_controle);
 		}
 		
 		if (index == 2){
@@ -60,18 +54,6 @@ for (var i = 0; i < op_max; i++){
 		}
 		
 		if (index == 0){
-			obj_player.tomardano = true;
-			obj_player.estado = scr_player_movendo;
-			if file_exists("save.sav") {
-                    ini_open("save.sav");
-                    // Carrega informações do jogador
-                    obj_player.x = ini_read_real("Jogador", "x_atual", 0);
-                    obj_player.y = ini_read_real("Jogador", "y_atual", 0);
-                    room_goto(ini_read_real("Jogador", "sala_atual", 0));
-                    obj_player.vida = ini_read_real("Jogador", "vida_atual", 0);
-
-                    ini_close();
-                }
 				
 		}
 	}
@@ -88,4 +70,4 @@ draw_set_color(c_red);
 draw_text(950, 310, "GameOver")
 draw_set_color(c_white);
 
-}
+

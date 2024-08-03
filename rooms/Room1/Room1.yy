@@ -6,7 +6,6 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_7D35D4DD","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_429CDFFE","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_6CA634E1","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_6616DE81","path":"rooms/Room1/Room1.yy",},
@@ -69,6 +68,7 @@
     {"name":"inst_55BD7A90","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_758E1DD9","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_2A9AF8DA","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_7D35D4DD","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -110,6 +110,7 @@
         {"$GMRSpriteGraphic":"","%Name":"graphic_5FE125A6","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_5FE125A6","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":0.8,"scaleY":0.8,"spriteId":{"name":"spr_A","path":"sprites/spr_A/spr_A.yy",},"x":32.0,"y":236.79999,},
         {"$GMRSpriteGraphic":"","%Name":"graphic_2465E7CD","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_2465E7CD","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":0.8,"scaleY":0.8,"spriteId":{"name":"spr_D","path":"sprites/spr_D/spr_D.yy",},"x":96.0,"y":236.79999,},
         {"$GMRSpriteGraphic":"","%Name":"graphic_7196701C","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_7196701C","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":0.8,"scaleY":0.8,"spriteId":{"name":"spr_W","path":"sprites/spr_W/spr_W.yy",},"x":64.0,"y":204.8,},
+        {"$GMRSpriteGraphic":"","%Name":"graphic_7F72B007","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_7F72B007","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":0.33,"scaleY":0.33,"spriteId":{"name":"spr_next_indicator","path":"sprites/spr_next_indicator/spr_next_indicator.yy",},"x":2944.0,"y":256.0,},
       ],"depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Assets_1","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Colisores","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_34B55C7B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_34B55C7B","objectId":{"name":"obj_chao","path":"objects/obj_chao/obj_chao.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":93.99999,"scaleY":1.0,"x":0.0,"y":320.0,},

@@ -12,6 +12,8 @@ if vida <= 0 {
         image_index = 0;
         reset = true;
     }
+	
+	audio_play_sound(SFX_MAGIC_ATTACK, 1, false);
     sprite_index = sprite_morrendo;
     if scr_fim_da_animacao() {
 	obj_barra.ponto +=1;

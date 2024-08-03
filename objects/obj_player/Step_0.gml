@@ -17,6 +17,8 @@ if (alarm[0] > 0) {
 
 // Morte//
 if (vida <= 0 && !instance_exists(obj_game_over_screen)) {
+	
+        audio_play_sound(Morrendo, 1, false);
   instance_create_layer(0, 0, "Instance_tr", obj_game_over_screen); // Cria a tela de "Game Over"
 }
 

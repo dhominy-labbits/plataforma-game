@@ -85,20 +85,19 @@ for (var i = 0; i < op_max; i++){
             if (index == 1) { // Carregar jogo
 				audio_play_sound(snd_click_menu,0,0);
 				//instance_create_layer(0,0,"Instances", obj_controle2);
-                if file_exists("save.sav") {
-                    ini_open("save.sav");
+             //   if file_exists("save.sav") {
+               //     ini_open("save.sav");
                     // Carrega informações do jogador
-					if (!instance_exists(obj_fade)){
-				var _targetRoom = ini_read_real("Jogador", "vida_atual", 5);
-				Fade(_targetRoom,60,c_black);
-				}
-                    obj_player.x = ini_read_real("Jogador", "x_atual", 0);
-                    obj_player.y = ini_read_real("Jogador", "y_atual", 0);
-                    room_goto(ini_read_real("Jogador", "sala_atual", 0));
-                    obj_player.vida = ini_read_real("Jogador", "vida_atual", 5);
+					
+               //     obj_player.x = ini_read_real("Jogador", "x_atual", 0);
+               //     obj_player.y = ini_read_real("Jogador", "y_atual", 0);
+                //    room_goto(ini_read_real("Jogador", "sala_atual", 0));
+                 //   obj_player.vida = ini_read_real("Jogador", "vida_atual", 5);
+					
 
-                    ini_close();
-                }
+                   // ini_close();
+					
+               // }
             }
             
             if (index == 2){ //Créditos
